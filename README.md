@@ -5,7 +5,7 @@
   - [Deze module](#deze-module)
 
 
-## introductie
+## introductiee
 
 In de module MySQL-Basic heb je kennis gemaakt met de taal SQL. Deze taal gebruik je om opdrachten te geven aan de database. Ook heb je het begrip CRUD gezien. Dit staat voor de belangrijkste soorten opdrachten die je tegen zult komen als je een applicatie maakt, bijvoorbeeld in PHP.
 
