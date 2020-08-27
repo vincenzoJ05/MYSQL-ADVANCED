@@ -1,25 +1,48 @@
-# MODULENAAM
+# MYSQL-ADVANCED
 
-> Bijvoorbeeld:  
->
-> ## PHP-Basic
+- [MYSQL-ADVANCED](#mysql-basic)
+  - [Introductie](#introductie)
+  - [Deze module](#deze-module)
 
-## Uitleg
 
-Introducerende tekst. Uitleggen nut van de module eventueel met praktijk voorbeelden.
-> Voorbeeld:  
-> In deze module leer je de basis van PHP. Je leert o.a. welke datatypes er in PHP veel gebruikt worden, hoe je de uitvoering van je programma beinvloed door het gebruik van condities binnen if/else/elif structuren en hoe je je code logisch onderverdeeld in functies.  
+## introductie
 
-## Leerdoelen
+In de module MySQL-Basic heb je kennis gemaakt met de taal SQL. Deze taal gebruik je om opdrachten te geven aan de database. Ook heb je het begrip CRUD gezien. Dit staat voor de belangrijkste soorten opdrachten die je tegen zult komen als je een applicatie maakt, bijvoorbeeld in PHP.
 
-Alle leerdoelen die in de lossen taken naar voren komen?  
-> Voorbeeld:
->
-> 1. [ ] Ik kan met PHP een functie aanspreken
+<!-- ![CRUD](https://github.com/ROC-van-Amsterdam-College-Amstelland/MYSQL-ADVANCED/blob/master/img/crud.jpg) -->
 
-## Bronnen
+![CRUD](img/crud.jpg)
 
-Alle bronnen die in de lossen taken naar voren komen?
-> Bijvoorbeeld:  
->[W3 Schools - PHP Functions](https://www.w3schools.com/php/php_functions.asp)  
->[Jaap van der Veen - PHP Basiscursus Les3: Functies](https://phpbasis.jaapvdveen.nl/basiscursus-php/les-3-inleiding-functies/)  
+
+In MySQL basic zijn er twee van de vier onderdelen van CRUD behandeld. Namelijk:
+Read en Delete.
+
+Read (het selecteren / lezen uit een database) wordt in SQL uitgevoerd met het commando `SELECT`
+
+Bijvoorbeeld: 
+
+```SQL
+SELECT * FROM studenten
+```
+
+Hierbij selecteer je alle gegevens uit de database-tabel ‘studenten’
+
+Delete (het verwijderen van één of meerdere rijen uit een database) wordt in SQL uitgevoerd met het commando `DELETE`
+
+Bijvoorbeeld: 
+```SQL
+DELETE FROM studenten WHERE student_id = 14
+```
+Hiermee verwijder je de gegevens (rij) van de student met student_id 14
+
+## deze module
+
+In deze module gaan we de andere twee onderdelen van CRUD behandelen namelijk `Create` en `Update`.
+
+Create (het toevoegen van nieuwe gegevens in een databasetabel) wordt in SQL uitgevoerd met het commando `INSERT INTO`
+
+
+ Update (het aanpassen van al bestaande gegevens in de database) wordt in SQL uitgevoerd met het commando `UPDATE`
+
+
+Ook behandelen we in deze module de relaties tussen verschillende tabellen en de manier waarom je in één query gegevens kunt halen uit meerdere tabellen.
