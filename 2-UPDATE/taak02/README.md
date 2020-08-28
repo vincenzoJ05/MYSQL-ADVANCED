@@ -44,15 +44,30 @@ WHERE game_titel = 'Fifa 2020' AND platform = 'PS4';
 
 1. [ ] Ik kan een SQL-statement schrijven waarmee ik velden van een record in een tabel kan veranderen
 2. [ ] Ik  begrijp wat de functie van een conditie is binnen een UPDATE-statement en wat er gebeurt als deze niet wordt toegevoegd
+3. [ ] Ik kan verschillende soorten operators gebruiken bij condities in een UPDATE-statement
+4. [ ] Ik kan verschillende condities combineren in een UPDATE-statement met behulp van AND
+5. [ ] Ik kan verschillende condities combineren in een UPDATE-statement met behulp van OR
 
 ## Opdracht
 
-1. [ ] We gebruiken dezelfde database `mod-mysql-advanced` met de in taak01 geimporteerde tabel `studenten-3` met de hierin gemaakte aanpassingen. Als je dit nog niet hebt gedaan, ga dan naar stap 2. anders ga verder naar stap 3.
-2. [ ] Om te beginnen open PhpMyAdmin in je browser en selecteer de database `mod-mysql-advanced` die je in een eerdere taak hebt aangemaakt. Heb je deze database nog niet, maak die dan nu aan. Importeer het `studenten-3.sql` bestand. Deze vind je in de `db-export` map. Vergeet niet de database eerst te selecteren voor je de import doet.
-3. [ ] Selecteer de tabel `studenten-3`. Open het SQL tabblad in PhpMyAdmin en schrijf SQL queries om de gevraagde gegevens te tonen:  
+1. [ ] We gebruiken dezelfde database `mod-mysql-advanced` met de in taak01 geimporteerde tabel `studenten2` met de hierin gemaakte aanpassingen. Als je dit nog niet hebt gedaan, ga dan naar stap 2. anders ga verder naar stap 3.
+2. [ ] Om te beginnen open PhpMyAdmin in je browser en selecteer de database `mod-mysql-advanced` die je in een eerdere taak hebt aangemaakt. Heb je deze database nog niet, maak die dan nu aan. Importeer het `studenten3.sql` bestand. Deze vind je in de `db-export` map. Vergeet niet de database eerst te selecteren voor je de import doet.
+3. [ ] Selecteer de tabel `studenten3`. Open het SQL tabblad in PhpMyAdmin en schrijf SQL queries om de gevraagde gegevens te tonen:  
    **(vergeet niet na elke beantwoorde vraag de SQL statement die je geschreven hebt te copy/pasten in `antwoorden.sql` en een bookmark met een logisch genaamd label aan te maken)**
 
-**Opdracht 1**: 
+### Voer de volgende opdrachten uit met één enkel SQL-statement per opdracht:
+
+**Opdracht 1**: Klas 9A gaat anders heten. Vanaf nu wordt dit 9X.
+
+**Opdracht 2**: Alle studenten die een id hebben dat groter is dan 7 verhuizen naar klas 9Z.
+
+**Opdracht 3**: Wijzig de woonplaats van studenten met een id van kleiner `of` gelijk aan 2 of groter dan 7 naar 'Amsterdam'
+
+**Opdracht 4**: Wijzig de woonplaats naar 'Uithoorn' van studenten die zitten in klas 9X `en` die wonen in Amsterdam
+
+
+
+
 
 ## Bronnen
 

@@ -41,7 +41,7 @@ WHERE id = 6;
 
 ## Opdracht
 
-1. [ ] We gebruiken een nieuwe database export genaamd `studenten-3.sql`. Deze vind je in de `db-export` map.
+1. [ ] We gebruiken een nieuwe database export genaamd `studenten2.sql`. Deze vind je in de `db-export` map.
 2. [ ] Om te beginnen open PhpMyAdmin in je browser en selecteer de database `mod-mysql-advanced` die je in een eerdere taak hebt aangemaakt. Heb je deze database nog niet, maak die dan nu aan. Importeer het `.sql` bestand. Vergeet niet de database eerst te selecteren voor je de import doet.
 3. [ ] Deze database bevat een tabellen genaamd `studenten`met de volgende kolommen: `student_id`, `voornaam`, `achternaam` , `klas`, `adres`, `postcode`, `geboortedatum` en `woonplaats`. De tabel ziet er alsvolgt uit:
 
