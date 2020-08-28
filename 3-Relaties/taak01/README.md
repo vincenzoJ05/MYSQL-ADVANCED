@@ -59,7 +59,7 @@ De tabel `cijfer` moet worden aangepast. De heeft de kolommen `id` en `cijfer` (
 
 Wat je moet inleveren is een plaatje met de drie tabellen, waarin de tabel `cijfer` het onderstaande is verwerkt, gebruikmakend van foreign keys. Je mag dit schema tekenen met pen en papier, of met een tekenprogramma maken (draw.io, balsamiq, etc.). Plaats het plaatje in de map `inlevermap`.
 
-De rijen van de tabel `cijfer` zijn op basis van de volgende informatie:
+## De rijen van de tabel `cijfer` zijn op basis van de volgende informatie:
 
 * Mohammed heeft een 8 gehaald voor de toets rekenen
 * Emma heeft een 8 gehaald voor de toets Engels
