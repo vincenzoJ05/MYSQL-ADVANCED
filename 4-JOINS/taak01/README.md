@@ -1,10 +1,10 @@
-# MYSQL-ADVANCED-RELATIES-TAAK-01
+# MYSQL-ADVANCED-JOINS-TAAK-01
 
-## Relaties tussen database-tabellen
+## SELECT uit meerdere tabellen
 
 
 ## Uitleg
-
+<!-- 
 Tot nu toe hebben we gekeken naar voorbeelden en opdrachten met een enkele tabel. Hierin hebben we gegevens opgehaald, ingevoerd, aangepast en verwijderd (CRUD). Een applicatie bestaat vaak uit vele verschillende tabellen. Een online winkel heeft bijvoorbeeld een tabel voor de klanten, een tabel voor de producten, een tabel voor de bestellingen, etc. etc.
 
 Deze tabellen kunnen een relatie met elkaar hebben. Om twee tabellen met elkaar te verbinden maken we gebruik van een zogenaamde foreign key. Een foreign key (externe sleutel) is een veld (of velden) die verwijzen naar de primaire sleutel van een andere tabel.
@@ -34,15 +34,15 @@ Zo een verwijzende kolom naar een primaty key in een andere tabel, noemen we een
 
 Stel Piet gaat naar een andere klas. Dan hoef je in de tabel **cijfer** niets te veranderen in de rijen waar Piet in voorkomt. Alleen de rij in de tabel **student** hoeft te worden aangepast.
 
-Een tabel kan slechts één primary key hebben. Foreign keys kunnen er meerdere zijn per tabel.
+Een tabel kan slechts één primary key hebben. Foreign keys kunnen er meerdere zijn per tabel. -->
 
 
 ## Leerdoelen
 
-1. [ ] Ik weet wat het begrip foreign key betekent
+<!-- 1. [ ] Ik weet wat het begrip foreign key betekent
 2. [ ] Ik weet hoe een relaties worden gemaakt tussen tabellen
 3. [ ] Ik ken de verschillen tussen primary- en foreign keys
-4. [ ] Ik begrijp waarom het gebruik van een foreign key in een tabel nuttig is
+4. [ ] Ik begrijp waarom het gebruik van een foreign key in een tabel nuttig is -->
 
 
 ## Opdracht
@@ -67,10 +67,5 @@ Wat je moet inleveren is een plaatje met de drie tabellen, waarin de tabel `cijf
 * Marri heeft een 6 gehaald voor toets PHP
 * Emma heeft een 4 gehaald voor toets Burgerschap
 * Marloes heeft een 7 gehaald voor toets Ontwerpen 1
-
-## Bronnen
-
-
-[Youtube - What is a Database Foreign Key?](https://www.youtube.com/watch?v=5Rd2atcDR4s) 
-
-
+ 
+https://www.youtube.com/watch?v=5Rd2atcDR4s

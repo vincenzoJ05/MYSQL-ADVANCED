@@ -67,10 +67,5 @@ Wat je moet inleveren is een plaatje met de drie tabellen, waarin de tabel `cijf
 * Marri heeft een 6 gehaald voor toets PHP
 * Emma heeft een 4 gehaald voor toets Burgerschap
 * Marloes heeft een 7 gehaald voor toets Ontwerpen 1
-
-## Bronnen
-
-
-[Youtube - What is a Database Foreign Key?](https://www.youtube.com/watch?v=5Rd2atcDR4s) 
-
-
+ 
+https://www.youtube.com/watch?v=5Rd2atcDR4s
