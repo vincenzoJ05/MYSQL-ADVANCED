@@ -44,8 +44,8 @@ Als we dit in taal zouden uitspreken, zou je zeggen:
 ## Opdracht
 
 1. [ ] We gebruiken een nieuwe database export genaamd `studenten.sql`. Deze vind je in de `db-export` map.
-2. [ ] Om te beginnen open PhpMyAdmin in je browser, maak een nieuwe database aan (noem deze `mod-mysql-advanced`) en importeer het `.sql` bestand. Vergeet niet de database eerst te selecteren voor je de import doet.
-3. [ ] Deze database bevat een tabellen genaamd `studenten`met de volgende kolommen: `student_id`, `voornaam`, `achternaam` , `klas`, `adres`, `postcode`, `geboortedatum` en `woonplaats`. De tabel ziet er ongeveer zo uit:
+2. [ ] Om te beginnen open je PhpMyAdmin in je browser, maak een nieuwe database aan (noem deze `mod-mysql-advanced`) en importeer het `.sql` bestand. Vergeet niet de database eerst te selecteren voor je de import doet.
+3. [ ] Deze database bevat een tabellen genaamd `studenten` met de volgende kolommen: `student_id`, `voornaam`, `achternaam` , `klas`, `adres`, `postcode`, `geboortedatum` en `woonplaats`. De tabel ziet er ongeveer zo uit:
    student_id | voornaam | achternaam | klas | adres | postcode | geboortedatum | woonplaats
    --------| -------| -----| ------| --------| -------| -----| ------|
     3 | Emma | da Silva | 9A | Albert Cuypstraat 3 | 1234AB | 2001-04-28 | Amstelveen |
@@ -57,7 +57,7 @@ Als we dit in taal zouden uitspreken, zou je zeggen:
 
 > Let er op dat je de geboorte datum het volgende formaat geeft: `jjjj-mm-dd`. Dus 25 maart 2002 wordt `2002-03-25`
 
-   **(vergeet niet voor elke ingevoerde student het SQL statement die je geschreven hebt te copy/pasten in `antwoorden.sql`. Maak voor twee van de invoeren een bookmark met als naam de voornaam van de student)**
+   **(vergeet niet voor elke ingevoerde student het SQL statement dat je geschreven hebt te copy/pasten in `antwoorden.sql`. Maak voor twee van de invoeren een bookmark met als naam de voornaam van de student)**
 
 
 

@@ -7,9 +7,9 @@
 
 Als een tabel veel kolommen heeft kan een INSERT INTO query erg lang worden. Vaak is het niet nodig of mogelijk om alle kolommen op te nemen in de query. Het kan bijvoorbeeld zijn dat je (nog) niet alle gegevens van een record hebt.
 
-Ook kunnen velden niet te worden opgenomen, omdat ze `auto increment` zijn. Vaak is dat het geval met de primaire sleutel van een tabel. In onderstaande afbeelding is dat `id`.
+Ook kunnen velden niet worden opgenomen, omdat ze `auto increment` zijn. Vaak is dat het geval met de primaire sleutel van een tabel. In onderstaande afbeelding is dat `id`.
 
->Wat is `auto increment` ook al weer? Auto increment wil zeggen dat de waarde automatisch wordt aangemaakt bij het toevoegen van een 
+>Wat is `auto increment` ook al weer? Auto increment wil zeggen dat de waarde automatisch wordt aangemaakt bij het toevoegen van een nieuw record.
 
 
 ## Nogmaals de basisSyntax
@@ -71,7 +71,7 @@ VALUES ('Zelda');
 `klas`, `adres` en `postcode`
 Voeg nog 3 studenten toe zonder de verplichte velden.
 
-   **(vergeet niet voor elke ingevoerde student het SQL statement die je geschreven hebt te copy/pasten in `antwoorden.sql`. Maak voor twee van de invoeren een bookmark met als naam de voornaam van de student)**
+   **(vergeet niet voor elke ingevoerde student het SQL statement dat je geschreven hebt te copy/pasten in `antwoorden.sql`. Maak voor twee van de invoeren een bookmark met als naam de voornaam van de student)**
 
 
 ## Eindresultaat

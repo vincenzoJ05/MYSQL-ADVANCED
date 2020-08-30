@@ -5,7 +5,7 @@
 
 ## Uitleg
 
-Zoals je met een `SELECT` statement gegevens uit een database kunt halen, je met `INSERT INTO` gegegvens kunt invoeren, kun je met het statement `UPDATE` gegvens in een tabel veranderen. Je kunt dit doen voor één enkel record (rij), voor een aantal rijen, of voor alle rijen in de tabel.
+Zoals je met een `SELECT` statement gegevens uit een database kunt halen, je met `INSERT INTO` gegegvens kunt invoeren, kun je met het statement `UPDATE` gegevens in een tabel veranderen. Je kunt dit doen voor één enkel record (rij), voor een aantal rijen, of voor alle rijen in de tabel.
 
 
 ## Syntax
@@ -43,7 +43,7 @@ WHERE id = 6;
 
 1. [ ] We gebruiken een nieuwe database export genaamd `studenten2.sql`. Deze vind je in de `db-export` map.
 2. [ ] Om te beginnen open PhpMyAdmin in je browser en selecteer de database `mod-mysql-advanced` die je in een eerdere taak hebt aangemaakt. Heb je deze database nog niet, maak die dan nu aan. Importeer het `.sql` bestand. Vergeet niet de database eerst te selecteren voor je de import doet.
-3. [ ] Deze database bevat een tabellen genaamd `studenten`met de volgende kolommen: `student_id`, `voornaam`, `achternaam` , `klas`, `adres`, `postcode`, `geboortedatum` en `woonplaats`. De tabel ziet er alsvolgt uit:
+3. [ ] Deze database bevat een tabel genaamd `studenten` met de volgende kolommen: `student_id`, `voornaam`, `achternaam` , `klas`, `adres`, `postcode`, `geboortedatum` en `woonplaats`. De tabel ziet er alsvolgt uit:
 
 ![Tabel studenten-3](img/studenten-3.png)
 
@@ -52,9 +52,9 @@ WHERE id = 6;
 
 **Opdracht 1**: Schrijf een SQL-statement die in één keer de woonplaatsen van alle studenten naar 'Amstelveen' verandert.
 
-**Opdracht 2**: Schrijf een SQL-statement voor de drie studenten waarvan de velden `adres` en `postcode` nog leeg zijn
+**Opdracht 2**: Schrijf SQL-statements voor de drie studenten waarvan de velden `adres` en `postcode` nog leeg zijn. Zorg dat deze velden hiermee worden gevuld.
 
-**Opdracht 3**: De geboortedatum van Marloes klopt niet. Verander deze met een SQL-statement naar 12 december 2000
+**Opdracht 3**: De geboortedatum van Marloes klopt niet. Verander deze met een SQL-statement naar 12 december 2000. Let hierbij op het datum-formaat. Dit moet zijn: `jjjj-mm-dd`
 
 **Opdracht 4**: Jan en Mohammed wisselen van klas. Pas dit aan met SQL statements.
 

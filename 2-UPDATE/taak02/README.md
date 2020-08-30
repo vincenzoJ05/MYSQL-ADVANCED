@@ -61,9 +61,9 @@ WHERE game_titel = 'Fifa 2020' AND platform = 'PS4';
 
 **Opdracht 2**: Alle studenten die een id hebben dat groter is dan 7 verhuizen naar klas 9Z.
 
-**Opdracht 3**: Wijzig de woonplaats van studenten met een id van kleiner of gelijk aan 2 `of` groter dan 7 naar 'Amsterdam'
+**Opdracht 3**: Wijzig de woonplaats van studenten met een id van kleiner of gelijk aan 2 `of` groter dan 7 naar 'Amsterdam'.
 
-**Opdracht 4**: Wijzig de woonplaats naar 'Uithoorn' van studenten die zitten in klas 9X `en` die wonen in Amsterdam
+**Opdracht 4**: Wijzig de woonplaats naar 'Uithoorn' van studenten die zitten in klas 9X `en` die wonen in Amsterdam.
 
 
 

@@ -6,8 +6,3 @@
 
 -- Opdracht 4
 
--- Opdracht 5
-
--- Opdracht 6
-
--- Opdracht 7
