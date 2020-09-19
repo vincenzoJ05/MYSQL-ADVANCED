@@ -1,8 +1,8 @@
 # MYSQL-ADVANCED
 
-- [MYSQL-ADVANCED](#mysql-basic)
-  - [Introductie](#introductie)
-  - [Deze module](#deze-module)
+- [MYSQL-ADVANCED](#mysql-advanced)
+  - [introductie](#introductie)
+  - [deze module](#deze-module)
 
 
 ## introductie

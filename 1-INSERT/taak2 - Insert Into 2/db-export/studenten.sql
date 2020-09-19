@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 28 aug 2020 om 11:29
+-- Gegenereerd op: 26 aug 2020 om 16:39
 -- Serverversie: 10.1.38-MariaDB
 -- PHP-versie: 7.3.3
 
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `studenten3`
+-- Tabelstructuur voor tabel `studenten`
 --
 
-CREATE TABLE `studenten3` (
+CREATE TABLE `studenten` (
   `student_id` int(5) NOT NULL,
   `voornaam` varchar(50) NOT NULL,
   `achternaam` varchar(50) NOT NULL,
@@ -40,29 +40,22 @@ CREATE TABLE `studenten3` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `studenten3`
+-- Gegevens worden geëxporteerd voor tabel `studenten`
 --
 
-INSERT INTO `studenten3` (`student_id`, `voornaam`, `achternaam`, `klas`, `adres`, `postcode`, `geboortedatum`, `woonplaats`) VALUES
-(1, 'Henk', 'van Balen', '9A', 'Albert Cuypstraat 1', '1234AB', '2000-05-18', 'Amstelveen'),
-(2, 'Marloes', 'Bakker', '9A', '2e Kekerstraat', '1104EG', '2000-12-12', 'Amstelveen'),
+INSERT INTO `studenten` (`student_id`, `voornaam`, `achternaam`, `klas`, `adres`, `postcode`, `geboortedatum`, `woonplaats`) VALUES
+(2, 'Marloes', 'Bakker', '9A', '2e Kekerstraat', '1104EG', '1999-12-12', 'Amsterdam'),
 (3, 'Emma', 'da Silva', '9A', 'Burgemeester Mulstraat 66', '1109ET', '2001-04-28', 'Amstelveen'),
-(4, 'Mohammed', 'Atari', '9C', 'Duke Ellingtonstraat 11', '1066AK', '2002-02-17', 'Amstelveen'),
-(5, 'Piet', 'Pieters', '9A', 'Albert Cuypstraat 5', '1234AB', '2001-04-28', 'Amstelveen'),
-(6, 'Johannah', 'Eduardo', '9C', 'Pieter Aertszstraat 44', '1073CD', '2001-09-02', 'Amstelveen'),
-(7, 'Angela ', 'Mohammed', '9C', 'Piet Mondriaanplein 14', '1299CD', '2002-05-17', 'Amstelveen'),
-(8, 'Jan', 'Vermeer', '9A', 'Ceintuurbaan 354', '1072GP', '2000-08-08', 'Amstelveen'),
-(9, 'Bert', 'Hendriks', '9C', 'Rijnstraat 96', '1079HM', '2001-04-28', 'Amstelveen'),
-(10, 'Marri', 'Janssen', '9C', 'Van Ostadestraat 177', '1073TL', '2003-06-26', 'Amstelveen');
+(4, 'Mohammed', 'Atari', '9A', 'Duke Ellingtonstraat 11', '1066AK', '2002-02-17', 'Amstelveen');
 
 --
 -- Indexen voor geëxporteerde tabellen
 --
 
 --
--- Indexen voor tabel `studenten3`
+-- Indexen voor tabel `studenten`
 --
-ALTER TABLE `studenten3`
+ALTER TABLE `studenten`
   ADD PRIMARY KEY (`student_id`);
 
 --
@@ -70,9 +63,9 @@ ALTER TABLE `studenten3`
 --
 
 --
--- AUTO_INCREMENT voor een tabel `studenten3`
+-- AUTO_INCREMENT voor een tabel `studenten`
 --
-ALTER TABLE `studenten3`
+ALTER TABLE `studenten`
   MODIFY `student_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 

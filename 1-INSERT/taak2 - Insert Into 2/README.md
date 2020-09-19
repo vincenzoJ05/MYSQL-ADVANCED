@@ -58,20 +58,20 @@ VALUES ('Zelda');
 
 ## Leerdoelen
 
-1. [ ] Ik kan een SQL statement schrijven waarmee ik een nieuw record kan toevoegen aan een tabel
-2. [ ] Ik weet wat auto increment betekent en hoe ik dit kan toepassen in een SQL-query
-3. [ ] Ik weet het verschil tussen verplichte- en niet verplichte database velden 
+1. Ik kan een SQL statement schrijven waarmee ik een nieuw record kan toevoegen aan een tabel
+2. Ik weet wat auto increment betekent en hoe ik dit kan toepassen in een SQL-query
+3. Ik weet het verschil tussen verplichte- en niet verplichte database velden 
 
 ## Opdracht
 
-1. [ ] Open het SQL tabblad in PhpMyAdmin en schrijf SQL queries om drie nieuwe studenten in te voeren in de database. Je hoeft hiervoor niet de echte gegevens van medestudenten te gebruiken. De studentgegevens verzinnen mag ook. Het veld `student_id` is auto-increment. Deze neem je niet op in de sql-query!!
+1. Open het SQL tabblad in PhpMyAdmin en schrijf SQL queries om drie nieuwe studenten in te voeren in de database. Je hoeft hiervoor niet de echte gegevens van medestudenten te gebruiken. De studentgegevens verzinnen mag ook. Het veld `student_id` is auto-increment. Deze neem je niet op in de sql-query!!
 
 
-2. [ ] Zoals je in phpMyAdmin al ziet zijn niet alle velden verplicht in de tabel. Dit is te zien op het tapblad 'structuur' (structure) in de kolom 'leeg'. Als hier 'ja' staat, betekent dit dat deze velden niet verplicht zijn. De kolommen in de tabel 'studenten' die niet verplicht zijn, zijn:
+2. Zoals je in phpMyAdmin al ziet zijn niet alle velden verplicht in de tabel. Dit is te zien op het tapblad 'structuur' (structure) in de kolom 'leeg'. Als hier 'ja' staat, betekent dit dat deze velden niet verplicht zijn. De kolommen in de tabel 'studenten' die niet verplicht zijn, zijn:
 `klas`, `adres` en `postcode`
 Voeg nog 3 studenten toe zonder de verplichte velden.
 
-   **(vergeet niet voor elke ingevoerde student het SQL statement dat je geschreven hebt te copy/pasten in `antwoorden.sql`. Maak voor twee van de invoeren een bookmark met als naam de voornaam van de student)**
+   >**(vergeet niet voor elke ingevoerde student het SQL statement dat je geschreven hebt te copy/pasten in `antwoorden.sql`. Maak voor twee van de invoeren een bookmark met als naam de voornaam van de student)**
 
 
 ## Eindresultaat
