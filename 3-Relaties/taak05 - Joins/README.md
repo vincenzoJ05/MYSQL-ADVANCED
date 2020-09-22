@@ -61,17 +61,19 @@ Als je deze query zou uitvoeren op de echte database dan krijg je twee rijen ter
 2. Ik weet hoe ik specieke kolommen kan op vragen in een SELECT statement
 3. Ik weet hoe ik een WHERE clausule toevoeg aan een SELECT statement met een JOIN clausule
 
-## Opdracht
+## Voorbereiding
 
 Gebruik de `mod-mysql-advanced-videogames` database uit **taak02**. (Als je die nog niet hebt aangemaakt doe dit dan alsnog door de database export te importeren in een nieuw aangemaakte database genaamd `mod-mysql-advanced-videogames`.)
 
 Voer de onderstaande opdrachten uit door een SQL query te schrijven met een JOIN en eventueel een WHERE clausule als nodig. Maak voor elke geschreven query een bookmark aan in PhpMyAdmin met een logische naam, b.v. `3-relaties/taak05/opdracht1` voor de eerste opdracht, etc.
 
+## Opdracht
+
 1. Maak een overzicht van alle spellen met het platform  waarop ze zijn uitgekomen.
 2. Maak een overzicht van de eerste 10 spellen in de game tabel (gebruik het id veld in de game tabel)
 3. Maak een overzicht dat alleen de **naam** en het **platform** laat zien van de game "Call of Duty: Advanced Warfare".
 4. Maak een overzicht dat het platform en de naam (in die volgorde) toont van alle games die beginnen met "FIFA". (gebruik de LIKE operator, zie [bronnen](#bronnen))
-5. Maak een overzicht van de naam en het platform van het spel "Borderlands" én het spel "Borderlands 2". (gebruik een AND in je WHERE clausule)
+5. Maak een overzicht van de naam en het platform van het spel "Borderlands" én het spel "Borderlands 2". (gebruik je dan een AND of een OR?)
 
 
 ## Bronnen

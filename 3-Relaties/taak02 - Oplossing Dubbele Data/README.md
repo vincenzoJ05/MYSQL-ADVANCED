@@ -44,7 +44,7 @@ Voor welk platform(en) zijn de onderstaande games uitgebracht?
 6. Call of Duty: Advanced Warfare
 7. Microsoft Flight Simulator
 8. Link's Crossbow Training
-9. Tomb RaiderGod of War
+9. Tomb Raider
+10. God of War
 
 ## Bronnen
-
