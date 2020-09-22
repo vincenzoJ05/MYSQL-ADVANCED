@@ -1,69 +1,78 @@
-# MYSQL-ADVANCED-RELATIES-TAAK-02
-
-## Relaties tussen database-tabellen
+# MYSQL-ADVANCED-RELATIES-TAAK-05
 
 ## Uitleg
 
-Tot nu toe hebben we gekeken naar voorbeelden en opdrachten met een enkele tabel. Hierin hebben we gegevens opgehaald, ingevoerd, aangepast en verwijderd (CRUD). Een applicatie bestaat vaak uit vele verschillende tabellen. Een online winkel heeft bijvoorbeeld een tabel voor de klanten, een tabel voor de producten, een tabel voor de bestellingen, etc.
+Tot nu toe hebben we gezien hoe je een database kan ontwerpen zodat je dubbele data vermijd en heb je handmatig gegevens bij elkaar gezocht door de inhoud van Primary Key en Foreign Key kolommen met elkaar te vergelijken.
 
-Deze tabellen kunnen een relatie met elkaar hebben. Om twee tabellen met elkaar te verbinden maken we gebruik van een zogenaamde foreign key. Een foreign key (externe sleutel) is een veld (of velden) die verwijzen naar de primaire sleutel van een andere tabel.
+Uiteraard kan dit gemakkelijker. MySQL geeft je de mogelijkheid om gegevens uit meerdere tabellen samen te voegen door een enkele query uit te voeren. Dit doe je door aan een SELECT query een JOIN clausule toe te voegen.
 
-Als voorbeeld nemen we een tabel toetsuitslagen. Zie onderstaande tabel:
+Er zijn 4 verschillende soorten JOINS. We beginnen met de zogenaamde LEFT JOIN. Hierbij gaan we uit van een tabel en zoeken we overeenkomstige gegevens erbij uit een andere tabel op basis van twee kolommen.
 
-![Output opdracht 1 - SELECT* FROM jaar2016](img/cijfers1.png)
+### Join Syntax
 
-Wat hierbij opvalt is dat Piet hier twee cijfers heeft gehaald en er met 2 records in staat. 
+De syntax van een JOIN clausule ziet er zo uit:
 
-![Output opdracht 1 - SELECT* FROM jaar2016](img/cijfers2.png)
+```SQL
+SELECT * FROM <table1> JOIN <table2> ON <table1.kolom> = <table2.kolom>;
+```
+Wat je hiermee eigenlijk zegt in je query is:
+> Geef me alles (`SELECT *`) van tabel1 (`FROM <table1>`) en voeg dit samen met tabel2 (`JOIN <table2>`) op basis van (`ON`) de Foreign Key kolom in tabel1 (`<table1.kolom>`) en de Primary Key kolom van tabel2 (`<table2.kolom`>).
 
-In dit simpele voorbeeld is dat niet heel erg. Maar niet praktisch is dat als je bijvoorbeeld veel meer informatie wilt registreren in de database over de student. Of als je een wijziging wilt doorvoeren. Als Piet bijvoorbeeld naar een andere klas gaat, moet je dit in verschillende rijen aanpassen.
+### Joins schematisch uitgelegd
 
-Wat je in deze situatie beter kunt doen, is gebruik maken van twee tabellen. Eén voor de cijfers en één voor alle studentinformatie. Zie voorbeeld:
+Schematisch zou het er dan zo uit zien zoals in onderstaand plaatje. Je ziet in het resultaat dat er voor de 3de rij in Table A geen overeenkomstige rij is gevonden in Table B. Zo werkt het met een LEFT JOIN; je krijgt alles terug uit Table A en als er niks wordt gevonden in Table B dan blijft dit veld leeg.
 
-![Output opdracht 1 - SELECT* FROM jaar2016](img/cijfers3.png)
+![](img/MySQL-LEFT-Join.jpg)
 
-In de tabel **student** is `student_id` de primary key. De waarden hiervan zijn uniek in deze tabel (komen maximaal één keer voor).
+### Voorbeeld tabellen
 
-De tabel **cijfer** heeft ook een primary key, namelijk `id`. Tabel **cijfer** heeft óók een kolom `student_id`. De waarden daarvan zijn waarden die ook voorkomen in de primary key van de tabel **student**. 
+Als we terug gaan naar onze voorbeeld database dan zie in onderstaand plaatje met kleuren aangegeven welke rijen op basis van de` game.platform_id` **Foreign Key** kolom en de `platform.id` **Primary Key** kolom met elkaar overeenkomen.
 
-> De waarde van student_id in tabel **cijfer** verwijst naar de primaire sleutel van de tabel **student** !
+![](img/games-join.jpg)
 
-Zo een verwijzende kolom naar een primaty key in een andere tabel, noemen we een **<u>foreign key</u>** (externe sleutel). Een foreign key heeft in tegenstelling tot een primary key, niet alleen unieke waarden. In het voorbeeld, komt de waarde van Piet (1155) meerdere keren voor. Piet heeft namelijk twee toetsen gemaakt.
+Om een JOIN uit te voeren op deze database zouden we dan de volgende SQL query schrijven:
+```sql
+SELECT * FROM game JOIN platform ON platform.id = game.platform_id;
+```
 
-Stel Piet gaat naar een andere klas. Dan hoef je in de tabel **cijfer** niets te veranderen in de rijen waar Piet in voorkomt. Alleen de rij in de tabel **student** hoeft te worden aangepast.
+Het resultaat wat je dan te zien krijgt staat hieronder: (letwel, dit is het resultaat van de voorbeeld gegevens, in werkelijkheid is bestaat de game tabel uit bijna 1000 rijen en niet alleen de 8 rijen uit het voorbeeld.)
 
-Een tabel kan slechts één primary key hebben. Foreign keys kunnen er meerdere zijn per tabel.
+![](img/games-join-result.jpg)
+
+### Where clausule toevoegen
+
+Om in de echte database te werken en bijvoorbeeld alleen van de eerste 8 spellen in de game tabel een overzicht te krijgen moet je een WHERE clausule toevoegen aan je SQL query"
+
+```sql
+SELECT * FROM game JOIN platform ON platform.id = game.platform_id WHERE game.id < 9;
+```
+Je plakt deze er gewoon achteraan. Nog één voorbeeld. Stel we willen alleen de naam en het platform terugkrijgen van het spel "Tetris" (Tetris is een heel bekend spel en is wel zeker op meerdere platformen uitgekomen). De SQL query die we dan zouden schrijven ziet er als volgt uit:
+
+```sql
+SELECT game.name, platform.platform FROM game JOIN platform ON platform.id = game.platform_id WHERE game.name = "Tetris";
+```
+Als je deze query zou uitvoeren op de echte database dan krijg je twee rijen terug. Volgens de database zijn er twee platformen waarop Tetris is uitgekomen: De Nintendo Nes en de Nintendo Gameboy.
+
+> LETOP: Het is handig om verwarring te voorkomen dat je kolommen benoemt met de volledige naam gescheiden door een punt (`.`). Je vraagt dus om `tabel.kolom` in je SELECT statement. In dit geval dus `game.name` bijvoorbeeld. 
 
 ## Leerdoelen
 
-1. [ ] Ik weet wat het begrip foreign key betekent
-2. [ ] Ik weet hoe een relaties worden gemaakt tussen tabellen
-3. [ ] Ik ken de verschillen tussen primary- en foreign keys
-4. [ ] Ik begrijp waarom het gebruik van een foreign key in een tabel nuttig is
+1. Ik weet wat een JOIN clausule is en hoe ik deze kan toepassing in een SQL query. 
+2. Ik weet hoe ik specieke kolommen kan op vragen in een SELECT statement
+3. Ik weet hoe ik een WHERE clausule toevoeg aan een SELECT statement met een JOIN clausule
 
 ## Opdracht
 
-Voor de opdracht gebruiken we de twee tabellen die in de uitleg zijn getoond. Daarbij komt nog een tabel, genaamd `toets`.
+Gebruik de `mod-mysql-advanced-videogames` database uit **taak02**. (Als je die nog niet hebt aangemaakt doe dit dan alsnog door de database export te importeren in een nieuw aangemaakte database genaamd `mod-mysql-advanced-videogames`.)
 
-![Output opdracht 1 - SELECT* FROM jaar2016](img/cijfers4.png)
+Voer de onderstaande opdrachten uit door een SQL query te schrijven met een JOIN en eventueel een WHERE clausule als nodig. Maak voor elke geschreven query een bookmark aan in PhpMyAdmin met een logische naam, b.v. `3-relaties/taak05/opdracht1` voor de eerste opdracht, etc.
 
-De tabel `student` blijft gelijk aan de tabel die we in de uitleg hebben gebruikt
+1. Maak een overzicht van alle spellen met het platform  waarop ze zijn uitgekomen.
+2. Maak een overzicht van de eerste 10 spellen in de game tabel (gebruik het id veld in de game tabel)
+3. Maak een overzicht dat alleen de **naam** en het **platform** laat zien van de game "Call of Duty: Advanced Warfare".
+4. Maak een overzicht dat het platform en de naam (in die volgorde) toont van alle games die beginnen met "FIFA". (gebruik de LIKE operator, zie [bronnen](#bronnen))
+5. Maak een overzicht van de naam en het platform van het spel "Borderlands" én het spel "Borderlands 2". (gebruik een AND in je WHERE clausule)
 
-![Output opdracht 1 - SELECT* FROM jaar2016](img/student.png)
-
-De tabel `cijfer` moet worden aangepast. De heeft de kolommen `id` en `cijfer` (net als in het plaatje met de uitleg). Verder zijn er nog twee kolommen met **foreign keys** die verwijzen naar de tabellen `student` en `toets`
-
-Wat je moet inleveren is een plaatje met de drie tabellen, waarin de tabel `cijfer` het onderstaande is verwerkt, gebruikmakend van foreign keys. Je mag dit schema tekenen met pen en papier, of met een tekenprogramma maken (draw.io, balsamiq, etc.). Plaats het plaatje in de map `inlevermap`.
-
-## De rijen van de tabel `cijfer` zijn op basis van de volgende informatie:
-
-* Mohammed heeft een 8 gehaald voor de toets rekenen
-* Emma heeft een 8 gehaald voor de toets Engels
-* Piet heeft een 5 gehaald voor toets PHP
-* Marri heeft een 6 gehaald voor toets PHP
-* Emma heeft een 4 gehaald voor toets Burgerschap
-* Marloes heeft een 7 gehaald voor toets Ontwerpen 1
 
 ## Bronnen
-
-[Youtube - What is a Database Foreign Key?](https://www.youtube.com/watch?v=5Rd2atcDR4s)
+[W3Schools - SQL LIKE Operator](https://www.w3schools.com/SQL/sql_like.asp)

@@ -1,4 +1,4 @@
-# MYSQL-ADVANCED-RELATIES-TAAK-02
+# MYSQL-ADVANCED-RELATIES-TAAK-03
 
 ## Relaties tussen database-tabellen
 
@@ -33,7 +33,7 @@ In onderstaand plaatje staat aangegeven wat de primary en foreign key kolommen z
 
 ## Opdracht
 
-1. de
+1. OPDRACHT
    
 
 ## Bronnen

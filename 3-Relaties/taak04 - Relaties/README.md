@@ -42,6 +42,12 @@ In onderstaand plaatje zijn de 3 verschillende relaties getoond die je in een Re
 
 ## Opdracht
 
+Noteer je antwoorden op onderstaande opdrachten in `antwoorden.md`. Zie uitleg voor een voorbeeld.
+
+1. Bedenk drie voorbeelden uit het echte leven waartussen een **One to One** relatie bestaat
+2. Bedenk drie voorbeelden uit het echte leven waartussen een **One to Many** relatie bestaat
+3. Bedenk drie voorbeelden uit het echte leven waartussen een **Many to Many** relatie bestaat
+
 
 ## Bronnen
 
