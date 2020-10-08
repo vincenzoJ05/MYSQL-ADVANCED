@@ -20,7 +20,7 @@ Dit doe je door in elke tabel bepaalde kolommen in te stellen als *sleutel* kolo
 - **De waarde van een Foreign Key kolom verwijst altijd naar een Primary Key kolom in een andere tabel.**
   > Gebruikelijk is om de naam van de kolom te baseren op de tabel waarnaar de Foreign Key verwijst met als toevoeging "_id" of "-id". Dus de `platform_id` Foreign Key kolom verwijst naar de `platform` tabel.
 - **Een tabel kan meerdere Foreign Key kolommen bevatten**
-  > Als we onze `videogamesales` voorbeeld database verder uitwerken door naast de `platform` kolom ook de `genre` en `publisher` gegevens in een eigen tabel te zetten dan krijgt de `game` tabel dus in totaal 3 Foreign Key kolommen: `platform_id`, `genre_id` en `publisher_id`.
+  > Stel dat we onze `videogamesales` voorbeeld database verder uitwerken door naast de `platform` kolom ook de `genre` en `publisher` gegevens in een eigen tabel te zetten dan krijgt de `game` tabel dus in totaal 3 Foreign Key kolommen: `platform_id`, `genre_id` en `publisher_id`.
 
 In onderstaand plaatje staat aangegeven wat de primary en foreign key kolommen zijn in onze versimpelde `videogames` database. 
 
@@ -33,8 +33,7 @@ In onderstaand plaatje staat aangegeven wat de primary en foreign key kolommen z
 
 ## Opdracht
 
-1. OPDRACHT
+1. Lees de tekst bij de uitleg goed. In volgende taken gaan we verder werken met relaties en keys. Je kunt deze taak afvinken.
    
-
 ## Bronnen
 

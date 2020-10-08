@@ -39,10 +39,10 @@ Hiermee verwijder je de gegevens (rij) van de student met student_id 14
 
 In deze module gaan we de andere twee onderdelen van CRUD behandelen namelijk `Create` en `Update`.
 
-Create (het toevoegen van nieuwe gegevens in een databasetabel) wordt in SQL uitgevoerd met het commando `INSERT INTO`
+Create (het toevoegen van nieuwe gegevens in een databasetabel) wordt in SQL uitgevoerd met het commando `INSERT INTO`.
 
 
- Update (het aanpassen van al bestaande gegevens in de database) wordt in SQL uitgevoerd met het commando `UPDATE`
+ Update (het aanpassen van al bestaande gegevens in de database) wordt in SQL uitgevoerd met het commando `UPDATE`.
 
 
-Ook behandelen we in deze module de relaties tussen verschillende tabellen en de manier waarom je in één query gegevens kunt halen uit meerdere tabellen.
+Ook behandelen we in deze module de relaties tussen verschillende tabellen en de manier waarom je in één query gegevens kunt halen uit meerdere tabellen door gebruik te maken van `JOINS`.
