@@ -32,7 +32,7 @@ Schrijf een SQL query die de onderstaande overzichten als resultaat heeft. Zie [
    > LETOP: zorg ervoor dat je een ALIAS gebruikt in je query zodat het duidelijk is wat voor informatie in elke kolom staat.
 2. Maak een overzicht waarin te zien is welke races er in 2017 gereden zijn met daarnaast de achternaam van driver die 10 punten heeft gehaald in een race. 
 3. Maak een overzicht van de voornaam en achternaam van alle drivers met daarnaast alle pitstops die korter duren dan 25 seconden.
-4. Maak een overzicht van McLaren (een constructeur van formule 1 autos) en de naam van de races uit 2018 waarin McLaren een auto had rijden.
+4. Maak een overzicht van McLaren (een constructeur van formule 1 autos) en de naam van de races uit 2010 waarin McLaren een auto had rijden.
 5. Maak een overzicht van de naam van een circuit met daarnaast het land waarin dit circuit zich bevind en de naam van de races die in 1950 zijn gereden op dit circuit door alle drivers wiens achternaam begint met de letter F.
 
 ## Eindresultaat
