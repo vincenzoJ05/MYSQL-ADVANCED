@@ -1,22 +1,30 @@
 # Antwoorden
-
+                                                                           
 1.  Final Fantasy VII
-    Wii
+    ps
+
 2.  Need for Speed Underground
-    NES
+    ps2
+
 3.  Mario Kart 8
-    GB
+    wiiu
+
 4.  Grand Theft Auto IV
-    DS
+    x360 en ps3
+
 5.  Medal of Honor: Frontline
-    X360
+    ps2
 6.  Call of Duty: Advanced Warfare
-    PS3
+    x360, ps3, ps4 en xone
+
 7.  Microsoft Flight Simulator
-    PS2
+    pc
+
 8.  Link's Crossbow Training
-    SNES
+    snes
+
 9.  Tomb Raider
-    GBA
+    ps
+
 10. God of War
-    PS4
+    PS2
